@@ -12,9 +12,7 @@
 
 <body>
     <header class="header">
-        <div class="header__inner">
-            <h1 class="header__heading">mogitate</h1>
-        </div>
+        <h1 class="header__heading">mogitate</h1>
     </header>
 
     <div class="content">
