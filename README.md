@@ -1,5 +1,5 @@
-# A mogitate（もぎたて）
-## A 環境構築
+# mogitate（もぎたて）
+## 環境構築
 **Dockerビルド**
 1. git clone git@github.com:estra-inc/confirmation-test-contact-form.git
 2. DockerDesktopアプリを立ち上げる
