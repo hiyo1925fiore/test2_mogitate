@@ -36,5 +36,9 @@ php artisan migrate
 ```
 php artisan db:seed
 ```
+##使用技術（実行環境）
+- PHP 8.4.1
+- Laravel 8.83.8
+- MySQL 8.0.26
 ## ER図
 ![database2 drawio](https://github.com/user-attachments/assets/41745a03-f6a3-4001-b5e0-113b113d2468)
