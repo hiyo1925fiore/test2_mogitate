@@ -42,3 +42,6 @@ php artisan db:seed
 - MySQL 8.0.26
 ## ER図
 ![database2 drawio](https://github.com/user-attachments/assets/41745a03-f6a3-4001-b5e0-113b113d2468)
+## URL
+- 開発環境：http://localhost/
+- phpMyAdmin：http://localhost:8080/
