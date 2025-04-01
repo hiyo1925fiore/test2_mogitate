@@ -25,10 +25,12 @@ DB_USERNAME=laravel_user
 DB_PASSWORD=laravel_pass
 ```
 5. アプリケーションキーの作成
-`php artisan key:generate`
-6. マイグレーションの実行
+```
+php artisan key:generate
+```
+7. マイグレーションの実行
 `php artisan migrate`
-7. シーディングの実行
+8. シーディングの実行
 `php artisan db:seed`
 ## ER図
 ![database2 drawio](https://github.com/user-attachments/assets/41745a03-f6a3-4001-b5e0-113b113d2468)
