@@ -78,12 +78,12 @@
                     @enderror
                 </p>
             </div>
-            <a href="/products">戻る</a>
+            <a class="register-form__back" href="/products">戻る</a>
             <input class="register-form__register-button" type="submit" value="登録">
         </form>
     </div>
 </div>
 <!-- 選択した画像のプレビューを表示する -->
-<script src="{{ asset('js/preview_image.js') }}"></script>
+<script src="{{ asset('js/register_preview_image.js') }}"></script>
 
 @endsection

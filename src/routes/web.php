@@ -14,6 +14,10 @@ use App\Http\Controllers\ProductsController;
 |
 */
 
-Route::get('/products',[ProductsController::class,'index']);
-Route::get('/products/register',[ProductsController::class,'register']);
-Route::post('/products/register',[ProductsController::class,'store']);
+Route::get('/products',[ProductsController::class, 'index']);
+Route::get('/products/register',[ProductsController::class, 'register']);
+Route::post('/products/register',[ProductsController::class, 'store']);
+Route::get('/products/search',[ProductsController::class,'search']);
+Route::get('/products/{id}',[ProductsController::class, 'detail']);
+Route::patch('/products/{id}/update',[ProductsController::class, 'update']);
+Route::delete('/products/{id}/delete',[ProductsController::class, 'destroy']);

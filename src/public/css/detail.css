@@ -1,0 +1,12 @@
+.product-details__breadcrumb-inner {
+    list-style: none;
+    display: flex;
+}
+
+.product-details__inner {
+    display: flex;
+}
+
+.product-details__season-option {
+    display: inline-block;
+}

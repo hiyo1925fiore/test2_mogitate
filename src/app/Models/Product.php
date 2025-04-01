@@ -25,4 +25,11 @@ class Product extends Model
     {
         return $this->belongsToMany(Season::class, 'product_season', 'product_id', 'season_id')->withTimestamps();
     }
+
+    public function scopeKeywordSearch($query, $keyword)
+{
+	if (!empty($keyword)) {
+    $query->where('name', 'like', '%' . $keyword . '%');
+  }
+}
 }
