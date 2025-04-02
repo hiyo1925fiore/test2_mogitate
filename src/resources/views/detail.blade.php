@@ -23,18 +23,24 @@
                         @if($product->image)
                             <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" style="max-width: 200px; margin-bottom: 10px;">
                             <input type="hidden" name="current_image" value="{{ $product->image }}">
-                            <div class="current-file-info">現在のファイル: {{ basename($product->image) }}</div>
                         @else
                             <img src="" alt="商品画像"  style="display: none;">
                         @endif
                     </div>
-                    
-                    <input class="product-details__file" type="file" name="image" id="image">
-                    <p class="product-details__error-message">
-                        @error('image')
-                        {{ $message }}
-                        @enderror
-                    </p>
+
+                    <div class="product-details__file-upload">
+                        <label for="image" class="register-form__file-select-button">ファイルを選択</label>
+                        <input class="product-details__file" type="file" name="image" id="image"  style="display: none;" accept="image/*">
+                        <input type="hidden" name="current_image" value="{{ $product->image }}">
+                        @if($product->image)
+                        <span class="register-form__file-selected-name" id="file-selected-name"></span>
+                        @endif
+                        <p class="product-details__error-message">
+                            @error('image')
+                            {{ $message }}
+                            @enderror
+                        </p>
+                    </div>
                 </div>
 
                 <div class="product-details__inner-input">

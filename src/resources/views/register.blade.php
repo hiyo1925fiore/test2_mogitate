@@ -38,7 +38,17 @@
                 <label class="register-form__label" for="image">
                     商品画像<span class="register-form__required">必須</span>
                 </label>
-                <input class="register-form__file" type="file" name="image" id="image" value="{{ old('image') }}">
+
+                <div class="register-form__image-upload-container">
+                    <div class="register-form_image-preview-container" id="image-preview-container">
+                    </div>
+
+                    <div class="register-form__file-input-wrapper">
+                        <input class="register-form__file" type="file" name="image" id="image" style="display: none;" accept="image/*">
+                        <label for="image" class="register-form__file-select-button">ファイルを選択</label>
+                        <span class="register-form__file-selected-name" id="file-selected-name"></span>
+                    </div>
+                </div>
                 <p class="register-form__error-message">
                     @error('image')
                     {{ $message }}
@@ -83,7 +93,7 @@
         </form>
     </div>
 </div>
-<!-- 選択した画像のプレビューを表示する -->
+<!-- 選択した画像のプレビュー＆画像選択時のみ画像名を表示する -->
 <script src="{{ asset('js/register_preview_image.js') }}"></script>
 
 @endsection
